@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        android:orientation="vertical"
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App de Fotos"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_corazon" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        android:orientation="vertical"
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/info_scroll"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //Foto 1
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewP1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/foto1"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+                <TextView
+                    android:id="@+id/textViewN1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Nombre de perfil"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewD1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta es la descripcion"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewF1"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_gravity="center"
+                android:src="@drawable/foto1" />
+
+            //Foto 2
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewP12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/foto2"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+                <TextView
+                    android:id="@+id/textViewN2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Nombre de perfil"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewD2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta es la descripcion"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewF2"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_gravity="center"
+                android:src="@drawable/foto2" />
+
+            //Foto 3
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewP13"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/foto3"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+                <TextView
+                    android:id="@+id/textViewN3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Nombre de perfil"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewD3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta es la descripcion"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewF3"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_gravity="center"
+                android:src="@drawable/foto3" />
+
+            //Foto 4
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewP14"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/foto4"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+                <TextView
+                    android:id="@+id/textViewN4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Nombre de perfil"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewD4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta es la descripcion"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewF4"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_gravity="center"
+                android:src="@drawable/foto4" />
+
+            //Foto 5
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewP5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/foto5"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+                <TextView
+                    android:id="@+id/textViewN5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Nombre de perfil"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewD5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta es la descripcion"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewF5"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_gravity="center"
+                android:src="@drawable/foto5" />
+
+            //Foto
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Circular"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Nombre de perfil"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esta es la descripcion"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
